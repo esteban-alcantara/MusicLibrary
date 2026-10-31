@@ -15,6 +15,7 @@ class BandsScreenTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        accessoryType = .disclosureIndicator
         bandImageView.contentMode = .scaleAspectFill
         bandImageView.clipsToBounds = true
         nameLabel.adjustsFontForContentSizeCategory = true

@@ -23,28 +23,28 @@
                             <constraint firstAttribute="height" constant="55" id="m6g-3b-Xng"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" numberOfLines="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-c3-Ngb">
-                        <rect key="frame" x="71" y="10" width="418" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-c3-Ngb">
+                        <rect key="frame" x="71" y="9.9999999999999982" width="418" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" numberOfLines="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bK-45-DH9">
-                        <rect key="frame" x="71" y="37" width="418" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bK-45-DH9">
+                        <rect key="frame" x="71" y="36.333333333333336" width="418" height="28.666666666666664"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="7bK-45-DH9" secondAttribute="bottom" constant="10" id="band-text-bottom"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YTc-DW-QdQ" secondAttribute="bottom" constant="10" id="band-image-bottom"/>
                     <constraint firstItem="Ie2-c3-Ngb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9iy-NP-f6e"/>
                     <constraint firstItem="YTc-DW-QdQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FSa-JP-vy8"/>
                     <constraint firstItem="7bK-45-DH9" firstAttribute="top" secondItem="Ie2-c3-Ngb" secondAttribute="bottom" constant="6" id="IAQ-Yj-Apd"/>
                     <constraint firstAttribute="trailing" secondItem="7bK-45-DH9" secondAttribute="trailing" constant="6" id="IR5-aI-dFe"/>
                     <constraint firstItem="YTc-DW-QdQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OhQ-mZ-GEq"/>
                     <constraint firstItem="7bK-45-DH9" firstAttribute="leading" secondItem="YTc-DW-QdQ" secondAttribute="trailing" constant="6" id="XAv-9Z-aJb"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YTc-DW-QdQ" secondAttribute="bottom" constant="10" id="band-image-bottom"/>
+                    <constraint firstAttribute="bottom" secondItem="7bK-45-DH9" secondAttribute="bottom" constant="10" id="band-text-bottom"/>
                     <constraint firstItem="YTc-DW-QdQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dnL-GJ-v8L"/>
                     <constraint firstAttribute="trailing" secondItem="Ie2-c3-Ngb" secondAttribute="trailing" constant="6" id="g8Q-JL-zfJ"/>
                     <constraint firstItem="Ie2-c3-Ngb" firstAttribute="leading" secondItem="YTc-DW-QdQ" secondAttribute="trailing" constant="6" id="mXh-8P-cbw"/>

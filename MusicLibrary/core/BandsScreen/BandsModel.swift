@@ -21,20 +21,13 @@ struct BandModel {
     let genre: String
     let members: [String]
     let description: String
-
-    var membersText: String {
-        members.joined(separator: ", ")
-    }
 }
 
 
 class BandTableViewModel {
 
     let bands: [BandModel]
-
-    private(set) var filterBands: [BandModel] = []
     private(set) var sections: [BandSection] = []
-
 
     init() {
         bands = [
@@ -97,8 +90,6 @@ class BandTableViewModel {
                 """
             )
         ]
-
-        filterBands = bands
         updateSections()
     }
 
@@ -106,7 +97,7 @@ class BandTableViewModel {
 
     private func updateSections() {
         let grouped = Dictionary(
-            grouping: filterBands,
+            grouping: bands,
             by: \.genre
         )
 
@@ -134,27 +125,5 @@ class BandTableViewModel {
 
     func getTitle(section: Int) -> String {
         sections[section].title
-    }
-
-    // MARK: - Search
-
-    func filterBands(with text: String) {
-        let query = text.trimmingCharacters(
-            in: .whitespacesAndNewlines
-        )
-
-        if query.isEmpty {
-            filterBands = bands
-        } else {
-            filterBands = bands.filter {
-                $0.name.localizedStandardContains(query) ||
-                $0.country.localizedStandardContains(query) ||
-                $0.genre.localizedStandardContains(query) ||
-                $0.membersText.localizedStandardContains(query) ||
-                String($0.formationYear).contains(query)
-            }
-        }
-
-        updateSections()
     }
 }

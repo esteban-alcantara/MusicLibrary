@@ -13,7 +13,7 @@ class BandsScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Bandas"
+        title = "Bands"
         setUpTableView()
     }
 
@@ -56,6 +56,11 @@ extension BandsScreenViewController: UITableViewDataSource {
 extension BandsScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        // Aquí agregaremos la navegación al detalle de la banda.
+        let band = viewModel.getBand(index: indexPath)
+        let DiscographyViewController = DiscographyViewController(
+            nibName: "DiscographyViewController", bundle: nil
+        )
+        DiscographyViewController.band = band
+        navigationController?.pushViewController(DiscographyViewController, animated: true)
     }
 }

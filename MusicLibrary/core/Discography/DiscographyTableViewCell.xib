@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="81" id="KGk-i7-Jjw" customClass="DiscographyTableViewCell" customModule="MusicLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBY-S9-sJd">
+                        <rect key="frame" x="16" y="15.999999999999996" width="306" height="33.666666666666657"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEj-oj-u17">
+                        <rect key="frame" x="16" y="50.666666666666664" width="306" height="14.333333333333336"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jBY-S9-sJd" secondAttribute="trailing" constant="16" id="2Ko-E9-MfA"/>
+                    <constraint firstAttribute="trailing" secondItem="fEj-oj-u17" secondAttribute="trailing" constant="16" id="5wL-Ca-Ewb"/>
+                    <constraint firstItem="jBY-S9-sJd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="90f-K8-mwD"/>
+                    <constraint firstItem="jBY-S9-sJd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="O5l-Oa-lvb"/>
+                    <constraint firstItem="fEj-oj-u17" firstAttribute="top" secondItem="jBY-S9-sJd" secondAttribute="bottom" constant="1" id="fYo-Uh-YKz"/>
+                    <constraint firstAttribute="bottom" secondItem="fEj-oj-u17" secondAttribute="bottom" constant="16" id="song-duration-bottom"/>
+                    <constraint firstItem="fEj-oj-u17" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uNI-zg-VBH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="durationLabel" destination="fEj-oj-u17" id="song-duration-outlet"/>
+                <outlet property="songTitleLabel" destination="jBY-S9-sJd" id="song-title-outlet"/>
+            </connections>
+            <point key="canvasLocation" x="-119" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>
